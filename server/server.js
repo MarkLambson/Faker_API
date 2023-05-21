@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-const port = 8000;
+const port = process.env.ATLAS_PORT;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
